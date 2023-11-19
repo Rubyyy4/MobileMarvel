@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width"
+    />
+    <title>login</title>
+  </head>
+  <style>
+    body {
+      background-image: url(bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .container .card {
+      position: absolute;
+      left: 40%;
+      top: 15%;
+      width: 300px;
+      height: 400px;
+      margin: 30px;
+      box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.1);
+      overflow: hidden;
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    h1 {
+      font-style: italic;
+      margin: 100px;
+    }
+    .inputbox {
+      position: relative;
+      top: -20%;
+      margin-left: 30px;
+      width: 250px;
+    }
+    .inputbox input {
+      width: 100%;
+      background: transparent;
+      color: #000;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      font-size: 1em;
+      letter-spacing: 0.1em;
+      padding: 10px 0 5px;
+    }
+    .inputbox span {
+      position: absolute;
+      left: 0;
+      padding: 10px 0 5px;
+      color: rgba(255, 255, 255, 0.5);
+      text-transform: uppercase;
+      pointer-events: none;
+      letter-spacing: 0.1em;
+      transition: 0.5s;
+    }
+    .inputbox input:valid ~ span,
+    .inputbox input:focus ~ span {
+      color: #000;
+      transform: translateY(-16px);
+      font-size: 0.7em;
+    }
+    .inputbox i {
+      position: absolute;
+      left: 0;
+      bottom: -1;
+      height: 2px;
+      width: 100%;
+      background: #fff;
+    }
+    .btn {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      font-weight: 600;
+      padding: 15px 40px;
+      color: #000;
+      border-radius: 10px;
+      border: 0;
+      outline: 0;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0.5, 0.5, 0, 0.5);
+      background: transparent;
+    }
+    input [type="submit"] {
+      color: #fff;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <form>
+        <div class="card">
+          <h1>LOGIN</h1>
+          <br />
+          <div class="inputbox">
+            <input type="text" required="required" />
+            <span>USER NAME</span><br />
+            <i></i> <br />
+          </div>
+          <div class="inputbox">
+            <input type="password" required="required" />
+            <span> PASSWORD </span><br />
+            <i></i>
+          </div>
+          <button
+            class="btn"
+            style="
+              border: 0;
+              background: transparent;
+              font-size: 16px;
+              color: #fff;
+            "
+            onclick="window.location.href = 'home.html';"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

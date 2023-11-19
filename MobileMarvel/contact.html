@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT us</title>
+    <style>
+      .cont {
+        margin-left: 80px;
+        background-color: #000;
+        color: #fff;
+        padding: 10px 4 10px;
+        position: relative;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+      }
+      .cont h1 {
+        font-size: 60px;
+        margin-left: 30px;
+        padding: 10px;
+      }
+      form {
+        background-color: gray;
+        margin: 80px;
+        padding: 20px;
+        height: 500px;
+        width: 800px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 10%;
+      }
+      .container2 {
+        background-color: #000;
+        height: 550px;
+        width: 500px;
+        position: absolute;
+        left: 65%;
+        top: 20%;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+      }
+      input[type="text" i] {
+        margin: 10px;
+        padding: 10px;
+        width: 60%;
+        font-size: medium;
+      }
+      input,
+      textarea {
+        margin: 10px;
+        padding: 10px;
+        width: 60%;
+        font-size: large;
+        border-radius: 10px;
+      }
+      input[type="submit" i] {
+        height: 60px;
+        width: 100px;
+        margin-left: 30%;
+        border-radius: 10px;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+      }
+      .container2 h3 {
+        letter-spacing: 5px;
+        margin-left: 35%;
+        padding: 12px;
+        position: relative;
+        top: -1%;
+      }
+      .container2 p {
+        margin-left: 35px;
+        padding: 12px;
+      }
+      .container2 h4 {
+        margin-left: 30%;
+        padding: 12px;
+        position: relative;
+        bottom: -2%;
+      }
+      .container2 h2 {
+        letter-spacing: 3px;
+        margin-left: 28%;
+        position: relative;
+        bottom: -5%;
+      }
+      .container2 h2 img {
+        margin-left: -8%;
+        position: relative;
+        bottom: 1%;
+      }
+
+      .social-media {
+        position: absolute;
+        left: 26%;
+        bottom: 17%;
+        cursor: pointer;
+      }
+     
+      .social-media2 {
+        position: absolute;
+        left: 30%;
+        bottom: 4%;
+        cursor: pointer;
+      }
+      .social-media2 img {
+        width: 30px;
+        display: inline;
+        margin: 10px 5px;
+      }
+      @media screen and (max-width:680px){
+
+
+      .cont {
+        margin-left: 40px;
+        background-color: #000;
+        color: #fff;
+        padding: 10px 4 10px;
+        position: relative;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+      }
+      .cont h1 {
+        font-size: 30px;
+        margin-left: 10px;
+        padding: 10px;
+
+      }
+      form {
+        background-color: gray;
+        margin: 40px;
+        padding: 10px;
+        height: 320px;
+        width: 400px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 5%;
+      }
+      input[type="text" i] {
+        margin: 10px;
+        padding: 10px;
+        width: 60%;
+        font-size: small;
+      }
+      input,
+      textarea {
+        margin: 10px;
+        padding: 10px;
+        width: 60%;
+        font-size: small;
+        border-radius: 5px;
+    }
+    input[type="submit" i] {
+        height: 35px;
+        width: 70px;
+        margin-left: 30%;
+        border-radius: 5px;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+      }
+      .container2 {
+        background-color: #000;
+        height: 520px;
+        width: 420px;
+        margin: 47px;;
+        position: absolute;
+        left: 0;
+        top: 53%;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+      }
+      .container2 p {
+        margin-left: 26px;
+        padding: 12px;
+        
+}
+.social-media2 {
+        position: absolute;
+        left: 30%;
+        bottom: 4%;
+        cursor: pointer;
+      }
+      .social-media2 img {
+        width: 20px;
+        display: inline;
+        margin: 10px 5px;
+      }
+      .container2 h4 {
+        margin-left: 30%;
+        padding: 12px;
+        position: relative;
+        bottom: 4%;
+      }
+      .social-media {
+        position: absolute;
+        left: 26%;
+        bottom: 15%;
+        cursor: pointer;
+      }
+      .social-media img {
+        width: 18px;
+        display: block;
+        margin: 10px 5px;
+      }
+
+
+    }
+    nav {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5px 0;
+      }
+
+      nav ul {
+        flex: 1;
+        text-align: right;
+      }
+
+      nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 30px;
+      }
+
+      nav ul li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        position: relative;
+      }
+
+      nav ul li a::after {
+        content: "";
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: #dc143c;
+        transition: width 0.3s;
+      }
+
+      nav ul li a:hover::after {
+        width: 100%;
+      }
+      .social-media {
+        position: absolute;
+        left: 10%;
+        bottom: 13%;
+      }
+      .social-media img {
+        width: 25px;
+        display: block;
+        margin: 25px 5px;
+      }
+      .logo img {
+        height: 50px;
+        width: 50px;
+        margin-left: 40px;
+        border-radius: 100px;
+      }
+      .logo {
+        font-size: 50px;
+        color: rgb(0, 0, 0);
+      }
+      nav ul.navigation .menubtn {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+     <nav>
+      <div class="logo"> MobileMarvel</div>
+        <ul class="navigation" id="navi">
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="brand2.html">BRANDS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li class="menubtn" onclick="menu()"><a href="#">&#9776;</a></li>
+        </ul>
+      </nav>
+    <!-- <div class="cont"><h1>Contact us</h1></div> -->
+    <form>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Your Name :"
+      /><br />
+      <input
+        type="text"
+        name="Contact"
+        id="contact"
+        placeholder="Contact No :"
+      />
+      <br />
+      <input type="text" name="Contact" id="contact" placeholder="email :" />
+      <br />
+      <textarea name="Address" id="address" placeholder="Address :"></textarea
+      ><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <div class="container2">
+      <h2><img src="map-icon.png" alt="" /> Location(IN)<br /></h2>
+      ______________________________________________________________ <br />
+      <h3>You can reach us at...</h3>
+      <!--<p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+        doloremque cmwsnckiwcmwks ncjdnc ncednje cdkm <br />
+        esse perspiciatis fugit adipisci quaerat.
+      </p>-->
+      <h4>(+91)636664XXXX</h4>
+      <h4>(+91)994562XXXX</h4>
+      <h4>MobileMarvel@gmail.com</h4>
+    </div>
+  </body>
+</html>

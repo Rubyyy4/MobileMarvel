@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+  </head>
+  <style>
+    nav {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 5px 0;
+    }
+
+    nav ul {
+      flex: 1;
+      text-align: right;
+    }
+
+    nav ul li {
+      display: inline-block;
+      list-style: none;
+      margin: 10px 30px;
+    }
+
+    nav ul li a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      position: relative;
+    }
+
+    nav ul li a::after {
+      content: "";
+      width: 0;
+      height: 3px;
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translate(-50%);
+      background-color: #dc143c;
+      transition: width 0.3s;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+    .social-media {
+      position: absolute;
+      left: 10%;
+      bottom: 13%;
+    }
+    .social-media img {
+      width: 25px;
+      display: block;
+      margin: 25px 5px;
+    }
+    .logo img {
+      height: 50px;
+      width: 50px;
+      margin-left: 40px;
+      border-radius: 100px;
+    }
+    .logo {
+      font-size: 50px;
+      color: rgb(0, 0, 0);
+      font-family: 'Times New Roman', Times, serif;
+    }
+    nav ul.navigation .menubtn {
+      display: none;
+    }
+    .margins {
+      margin-bottom: 1%;
+    }
+  </style>
+  <body>
+    <nav>
+      <div class="logo"> MobileMarvel</div>
+
+      <ul class="navigation" id="navi">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="brand.html">BRANDS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li class="menubtn" onclick="menu()"><a href="#">&#9776;</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="row margins">
+        <div class="col-sm">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="Oneplus.png"
+              alt="Card image cap"
+              style="
+                height: 150px;
+                width: 100px;
+                position: relative;
+                left: 100px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">OnePlus 11</h5>
+              <p class="card-text">
+                OnePlus <br />
+                OSAndroid v13, upgradable to v14<br />
+                8 GB RAM<br />
+                128 GB, Non Expandable<br>
+                Display 6.7 inches (17.02 cm) <br />
+                5000 mAh<br />
+                Rear Camera:	50 MP + 48 MP + 32 MP<br />
+                Front Camera	16 MP <br />
+                Dual SIM: Nano + Nano<br>
+                5G Supported in India<br>
+                VoLTE<br>
+                Fingerprint<br> 
+                sensorGorilla
+                <br> GlassUSB OTG Support
+              </p>
+              <a href="#" class="btn btn-primary">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="samsung.png"
+              alt="Card image cap"
+              style="
+                height: 150px;
+                width: 100px;
+                position: relative;
+                left: 100px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Samsung Galaxy Z Fold5 
+              </h5>
+              <p class="card-text">
+                Samsung <br />
+                RAM	12 GB<br />
+                Processor: Qualcomm Snapdragon 8 Gen 2<br />
+                Rear Camera: 50 MP + 12 MP + 10 MP<br />
+                Front Camera:	10 MP + 4 MP<br />
+                Battery	4400 mAh<br />
+                Display	7.6 inches (19.3 cm)<br />
+                Waterproof, IPX8<br />
+                
+                256 GB, Non Expandable<br />
+                Dual SIM: Nano + eSIM<br />
+                5G Supported in India<br />
+                VoLTE<br />
+                Fingerprint <br />
+                </p>
+              <a href="#" class="btn btn-primary">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="google-pixel-7.png"
+              alt="Card image cap"
+              style="
+                height: 150px;
+                width: 100px;
+                position: relative;
+                left: 100px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Google Pixel 7 Pro 5G <br />
+              </h5>
+              <p class="card-text">
+                Google <br />
+                RAM	12 GB<br />
+                128 GB, Non Expandable<br />
+                Processor	Google Tensor G2<br />
+                Rear Camera	50 MP + 12 MP + 48 MP<br />
+                Front Camera	10.8 MP<br />
+                Battery	5000 mAh<br />
+                Display	6.7 inches (17.02 cm)<br />
+                Graphics	Mali-G710 MP7<br />
+                Waterproof	Yes, Water resistant<br />
+                5G Supported in India<br />
+                Dual SIM: Nano + eSIM<br />
+                VoLTE<br />
+                Fingerprint <br />
+              </p>
+              <a href="#" class="btn btn-primary">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row margins">
+        <div class="col-sm">
+          <div class="card" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="iphone15.png"
+              alt="Card image cap"
+              style="
+                height: 150px;
+                width: 100px;
+                position: relative;
+                left: 100px;
+              "
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Apple iPhone 15 Pro Max <br />
+              </h5>
+              <p class="card-text">
+                Apple <br />             
+                RAM	8 GB<br />
+                256 GB, Non Expandable<br />
+                Dual SIM: Nano + eSIM<br />
+                Processor	Apple A17 Pro<br />
+                Rear Camera	48 MP + 12 MP + 12 MP<br />
+                Front Camera	12 MP<br />
+                Battery	4422 mAh<br />
+                Display	6.7 inches (17.02 cm)<br />
+                Operating System	iOS v17<br />
+                Waterproof	Yes, Water resistant  <br />
+                Dual SIM: Nano + eSIM<br />
+                Network Support	5G Supported in India <br />
+                No Fingerprint Sensor	 <br />
+                Light sensor, Proximity sensor, Accelerometer, Barometer, Compass, Gyroscope<br />
+                
+                </p>
+              <a href="#" class="btn btn-primary">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="vivo-x90-pro.png" alt="Card image cap"style="
+            height: 150px;
+            width: 100px;
+            position: relative;
+            left: 100px;
+          " />
+            <div class="card-body">
+              <h5 class="card-title">vivo X90 Pro</h5>
+              <p class="card-text">
+                Vivo <br />
+                RAM	12 GB<br />
+                Processor	MediaTek Dimensity 9200 MT6985<br />
+                Rear Camera	50 MP + 12 MP + 50 MP<br />
+                Front Camera	32 MP<br />
+                Battery	4870 mAh<br />
+                Display	6.78 inches (17.22 cm)<br />
+                Operating System	Android v13<br />
+                Custom UI	Funtouch OS<br />
+                256 GB, Non Expandable<br />
+                Dual SIM: Nano + Nano<br />
+                5G Supported in India<br />
+                VoLTE<br />
+                Fingerprint Sensor	on screen<br />
+                Light sensor, Proximity sensor, Accelerometer, Compass, Gyroscope<br />
+              </p>
+              <a href="#" class="btn btn-primary">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="samsungs23.png" alt="Card image cap"               style="
+            height: 150px;
+            width: 100px;
+            position: relative;
+            left: 100px;
+          " />
+            <div class="card-body">
+              <h5 class="card-title">Galaxy S23 Ultra 5G</h5>
+              <p class="card-text">
+                Samsung <br />
+                RAM	12 GB<br />
+                Processor	Qualcomm Snapdragon 8 Gen 2<br />
+                Rear Camera	200 MP + 12 MP + 10 MP + 10 MP<br />
+                Front Camera	12 MP<br />
+                Battery	5000 mAh<br />
+                Display	6.8 inches (17.27 cm)<br />
+                Operating System	Android v13<br />
+                Custom UI	Samsung One UI<br />
+                256 GB, Non Expandable<br />
+                Dual SIM: Nano + Nano<br />
+                5G Supported in India<br />
+                VoLTE<br />
+                Fingerprint Sensor	on screen<br />
+                Light sensor, Proximity sensor, Accelerometer, Barometer, Compass, Gyroscope<br />
+              </p>
+              <a href="#" class="btn btn-primary">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

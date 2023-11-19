@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+</head>
+<style>
+    *{
+        font-family: 'Times New Roman';
+        
+
+    }
+    .about{
+        height: 650px;
+        width: 1200px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        margin: 80px;
+        background-color:#ababab;
+        
+    }
+    img{
+        background-image: transparent;
+        padding-top: 5%;
+    }
+.about h1{
+       position: absolute;
+       color: #fff;
+       background: #000;
+       left: 67%;
+       top: 20%;  
+       font-size:50px;
+       mix-blend-mode:screen;
+       padding: 10px 30px;
+       
+}
+.about h3{
+    position: absolute;
+       left: 45%;
+       top: 25%; 
+       font-size:80px;  
+}
+.about p{
+    position: absolute;
+  
+       left: 35%;
+       top: 50%;         
+}
+@media screen and (max-width:680px){
+    .about{
+        height: 1200px;
+        width: 500px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        margin: 30px;
+        background-color:#ababab;
+        
+    }
+    .about h1{
+       position: absolute;
+       color: #fff;
+       background: #000;
+       left: 8%;
+       top: 80%;  
+       font-size:40px;
+       mix-blend-mode:screen;
+       padding: 10px 30px;
+       
+}
+.about h3{
+    position: absolute;
+       left: 15%;
+       top: 85%; 
+       font-size:60px;  
+}
+.about p{
+    position: absolute;  
+       left: 15%;
+       top: 120%;         
+}
+
+
+
+}
+
+nav {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5px 0;
+      }
+
+      nav ul {
+        flex: 1;
+        text-align: right;
+      }
+
+      nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 30px;
+      }
+
+      nav ul li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        position: relative;
+      }
+
+      nav ul li a::after {
+        content: "";
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: #dc143c;
+        transition: width 0.3s;
+      }
+
+      nav ul li a:hover::after {
+        width: 100%;
+      }
+      .social-media {
+        position: absolute;
+        left: 10%;
+        bottom: 13%;
+      }
+      .social-media img {
+        width: 25px;
+        display: block;
+        margin: 25px 5px;
+      }
+      .logo img {
+        height: 50px;
+        width: 50px;
+        margin-left: 40px;
+        border-radius: 100px;
+      }
+      .logo {
+        font-size: 50px;
+        color: rgb(0, 0, 0);
+      }
+      nav ul.navigation .menubtn {
+        display: none;
+      }
+</style>
+<body>
+    <nav>
+        <div class="logo"> MobileMarvel</div>
+        <ul class="navigation" id="navi">
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="brand2.html">BRANDS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li class="menubtn" onclick="menu()"><a href="#">&#9776;</a></li>
+        </ul>
+      </nav>
+    <div>
+        <h1 style="text-align: center;">  About us</h1>
+        
+        <h2 style="text-align: center;"><i> <u>Our MobileMarvel</u></i> </h2>
+        <p style="text-align: center;"><i>Welcome to MobileMarvel, your premier destination for cutting-edge mobile shopping. <br>
+          Explore an extensive collection of top-tier smartphones, accessories, and gadgets curated to meet your every need. From flagship devices to trendsetting accessories, MobileMarvel offers a seamless and secure shopping experience. <br>
+          Our user-friendly interface ensures effortless navigation, while expert advice and detailed product information empower you to make informed decisions. At MobileMarvel, we prioritize your security, employing encrypted transactions for worry-free shopping. Benefit from timely deliveries and join us in embracing the future of mobile technology. <br>
+          Elevate your mobile experience – shop with confidence at MobileMarvel, where innovation meets convenience.</i>
+        </p>
+        <center><img src="about1.png" alt="" /></center>
+    </div>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <style>
+      * {
+        font-family: "Times New Roman";
+      }
+      body {
+        background-image: url("banner.jpg");
+        background-repeat: no-repeat;
+      }
+      .container {
+        color: #fff;
+      }
+      .btn {
+        position: absolute;
+        top: 60%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        font-weight: 600;
+        padding: 15px 50px;
+        color: #000;
+        border-radius: 10px;
+        border: 0;
+        outline: 0;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0 5px 10px rgba(0.5, 0.5, 0, 0.5);
+        transition: transform 0.5s;
+      }
+      .btn:hover {
+        background-color: #000;
+        color: #fff;
+      }
+      .container h1 {
+        position: absolute;
+        left: 10%;
+        top: 20%;
+        font-size: 60px;
+      }
+      .container p {
+        position: absolute;
+        left: 10%;
+        top: 43%;
+      }
+      nav {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5px 0;
+      }
+
+      nav ul {
+        flex: 1;
+        text-align: right;
+      }
+
+      nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 30px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+      }
+
+      nav ul li a::after {
+        content: "";
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: #dc143c;
+        transition: width 0.3s;
+      }
+
+      nav ul li a:hover::after {
+        width: 100%;
+      }
+      .social-media {
+        position: absolute;
+        left: 10%;
+        bottom: 13%;
+      }
+      .social-media img {
+        width: 25px;
+        display: block;
+        margin: 25px 5px;
+      }
+      .logo img {
+        height: 50px;
+        width: 50px;
+        margin-left: 40px;
+        border-radius: 100px;
+      }
+      .logo {
+        font-size: 50px;
+        color: #fff;
+      }
+      nav ul.navigation .menubtn {
+        display: none;
+      }
+    
+
+      @media screen and (max-width: 680px) {
+        .container {
+          display: flex;
+        }
+        .navigation li {
+          display: none;
+        }
+        .container p {
+          position: absolute;
+          left: 10%;
+          top: 45%;
+          font-size: 10px;
+          color: white;
+        }
+
+        nav ul.navigation .menubtn {
+          display: block;
+          color: #fff;
+        }
+
+        .logo img {
+          height: 30px;
+          width: 30px;
+          margin-left: 40px;
+          border-radius: 100px;
+        }
+        .logo {
+          font-size: 30px;
+          color: #fff;
+        }
+        body {
+          background-image: url("banner.jpg");
+          background-repeat: no-repeat;
+          background-size: 350vh;
+          background-size: 350vw;
+        }
+
+        h1.newphone {
+          font-size: 40px;
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          top: 30%;
+        }
+        .btn {
+          width: 100px;
+          height: 20px;
+          font-size: 15px;
+          align-items: center;
+          padding: 15px 20px;
+          position: absolute;
+          top: 60%;
+          margin-left: 15px;
+        }
+
+        .social-media {
+          position: absolute;
+          left: 8%;
+          top: 63%;
+        }
+        .social-media img {
+          width: 20px;
+          display: inline;
+          margin: 25px 5px;
+        }
+        .ads {
+          display: flex;
+          flex-direction: column;
+          margin: 5px;
+        }
+        nav ul.resnavi li {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo"> MobileMarvel</div>
+
+        <ul class="navigation" id="navi">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="brand2.html">BRANDS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li class="menubtn" onclick="menu()"><a href="#">&#9776;</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      
+      <h1 class="newphone">Your journey to mobile excellence begins here.</h1>
+      <p>
+        Discover cutting-edge mobile phones at our online store. Explore the latest models, sleek designs, and powerful features.<br>
+        Find the perfect device that suits your lifestyle and stay connected in style. Shop now for unbeatable deals and elevate your mobile experience with us!
+      </p>
+
+      <button class="btn" onclick="window.location.href = 'brand2.html';"> Buy Now  </button>
+    </div>
+    
+  </body>
+</html>
